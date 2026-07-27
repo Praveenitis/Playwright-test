@@ -44,6 +44,9 @@ await expect(page.getByText(username)).toBeVisible()
 await expect(page.getByLabel('Sidepanel')).toBeVisible()
 
 
+//NEW TAB HANDLE
+
+
 //TITLE
 const [newPage] = await Promise.all([
     page.waitForEvent('popup'),

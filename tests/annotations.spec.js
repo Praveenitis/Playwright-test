@@ -6,7 +6,7 @@ test.only("Test 1", async function({page}){ // only this test will run
 
 })
 
-test("Test 2", async function({page}){  //skips this test and run other ones
+test.skip("Test 2", async function({page}){  //skips this test and run other ones
      console.log("skip")
 
     
@@ -14,7 +14,7 @@ test("Test 2", async function({page}){  //skips this test and run other ones
 
 })
 
-test("Test 3", async function({page}){  // Forcibly fail even it has no errors
+test.fail("Test 3", async function({page}){  // Forcibly fail even it has no errors
      console.log("fail")
 
     
@@ -22,14 +22,14 @@ test("Test 3", async function({page}){  // Forcibly fail even it has no errors
 
 })
 
-test("Test 4", async function({page}){  //Temprory skip, used when we want to change code later on
+test.fixme("Test 4", async function({page}){  //Temprory skip, used when we want to change code later on
 
      console.log("fixme")
 
 
 })
 
-test("Test 5", async function({page}){  //makes execution time as 3x the normal time (90 sec)
+test.slow("Test 5", async function({page}){  //makes execution time as 3x the normal time (90 sec)
 
      console.log("slow")
 
