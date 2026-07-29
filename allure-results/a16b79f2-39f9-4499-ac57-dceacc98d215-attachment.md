@@ -1,0 +1,104 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: cssSelectors.spec.js >> Practise CSS Selectors
+- Location: tests\cssSelectors.spec.js:3:5
+
+# Error details
+
+```
+TypeError: page.locator(...).toBeVisible is not a function
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - link "Press \"Enter\" to skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-container"
+  - generic [ref=e4]:
+    - banner [ref=e5]:
+      - generic [ref=e6]:
+        - generic:
+          - navigation
+      - link "Practice Test Automation" [ref=e10] [cursor=pointer]:
+        - /url: https://practicetestautomation.com/
+        - img "Practice Test Automation" [ref=e11]
+      - navigation [ref=e16]:
+        - navigation [ref=e17]:
+          - list [ref=e18]:
+            - listitem [ref=e19]:
+              - link "Home" [ref=e20] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/
+            - listitem [ref=e21]:
+              - link "Practice" [ref=e22] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/practice/
+            - listitem [ref=e23]:
+              - link "Courses" [ref=e24] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/courses/
+            - listitem [ref=e25]:
+              - link "AI Workshop" [ref=e26] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/workshop
+            - listitem [ref=e27]:
+              - link "Blog" [ref=e28] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/blog/
+            - listitem [ref=e29]:
+              - link "Contact" [ref=e30] [cursor=pointer]:
+                - /url: https://practicetestautomation.com/contact/
+    - main [ref=e31]:
+      - article [ref=e34]:
+        - heading "Logged In Successfully" [level=1] [ref=e36]
+        - generic [ref=e37]:
+          - paragraph [ref=e38]:
+            - strong [ref=e39]: Congratulations student. You successfully logged in!
+          - link "Log out" [ref=e43] [cursor=pointer]:
+            - /url: https://practicetestautomation.com/practice-test-login/
+          - paragraph
+    - contentinfo:
+      - generic [ref=e45]:
+        - text: © Copyright 2020
+        - link "Practice Test Automation." [ref=e46] [cursor=pointer]:
+          - /url: https://practicetestautomation.com/
+        - text: All rights reserved |
+        - link "Privacy Policy" [ref=e47] [cursor=pointer]:
+          - /url: https://practicetestautomation.com/privacy-policy/
+```
+
+# Test source
+
+```ts
+  1  | import {test, expect} from "@playwright/test"
+  2  | 
+  3  | test("Practise CSS Selectors", async function({page}) {
+  4  |     await page.goto("https://practicetestautomation.com/practice-test-login/")
+  5  | 
+  6  | 
+  7  |     await page.locator('#username').fill('student')  // ID
+  8  |     await page.locator("#password").fill('Password123') // CLASS
+  9  |     await page.locator('.btn').click() // PROPERTY
+  10 |     
+  11 | 
+  12 |     page.waitForLoadState()
+  13 | 
+  14 |     await expect (page.locator('[class^="wp-block-button__link"]')).toBeVisible() //PREFIX
+> 15 |     await expect  (page.locator('[class$="-credit"]').toBeVisible()) //SUFFIX
+     |                                                       ^ TypeError: page.locator(...).toBeVisible is not a function
+  16 |     await expect (page.locator(['[class*="text-color has-background has-very-dark-gray-"]'])).toBeVisible()
+  17 |     //SUBSTRING
+  18 | 
+  19 | 
+  20 |     await page.locator()
+  21 | 
+  22 | 
+  23 | 
+  24 | 
+  25 | 
+  26 | })
+  27 | 
+  28 | 
+```

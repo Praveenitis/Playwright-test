@@ -11,9 +11,9 @@ test("Practise CSS Selectors", async function({page}) {
 
     page.waitForLoadState()
 
-    await page.locator('[class^="wp-block-button__link"]').toBeVisible() //PREFIX
-    await page.locator('[class$="-credit"]').toBeVisible() //SUFFIX
-    await page.locator(['[class*="text-color has-background has-very-dark-gray-"]']).toBeVisible()
+    await expect (page.locator('[class^="wp-block-button__link"]')).toBeVisible() //PREFIX
+    await expect  (page.locator('[class$="-credit"]')).toBeVisible() //SUFFIX
+    await expect (page.locator('[class*="text-color has-background has-very-dark-gray-"]')).toBeVisible()
     //SUBSTRING
 
 
