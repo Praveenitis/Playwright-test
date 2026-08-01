@@ -57,7 +57,7 @@ test("Handling Register form", async function({page}){
 
       })
 
-    test.only("Handling dropdown", async({page})=>{
+    test("Handling dropdown", async({page})=>{
 
         await page.goto("https://testautomationpractice.blogspot.com/")
 
