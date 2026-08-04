@@ -1,0 +1,22 @@
+{
+
+    "amazon" : [
+
+        {
+         "products" : "Laptop"   
+        },
+        {
+         "products" : "mobiles"   
+        },
+        {
+         "products" : "Headphones"   
+        },
+        {
+         "products" : "shoes"   
+        }
+    ]
+
+    
+
+
+}

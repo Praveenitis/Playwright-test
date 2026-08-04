@@ -1,16 +1,12 @@
-var count = {}
+var arr = [1,2,3,4,5,6,7,8]
+var count = 0;
 
-var str = "hello"
-
-for(let ch of str){
-    if(count[ch]==undefined){
-        count[ch] =1
-        
-    } else {
-        count[ch]++
+for(let i=0;i<arr.length;i++){
+    for(let j=i+1;j<arr.length;j++){
+        if(arr[i] + arr[j] === 10){
+            count++;
+        }
     }
-
-
 }
 
 console.log(count)

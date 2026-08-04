@@ -1,0 +1,13 @@
+{
+
+    "dropdown" : [
+
+        {
+            "options" : "Option 1"
+        },
+
+        {
+            "options" : "Option 2"
+        }
+    ]
+}
