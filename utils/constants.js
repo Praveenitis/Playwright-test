@@ -1,0 +1,1 @@
+export const ProductcartMsg = "Product added."
