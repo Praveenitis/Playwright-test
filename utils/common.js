@@ -1,4 +1,5 @@
 import {expect} from "@playwright/test"
+import {ProductcartMsg} from "../utils/constants"
 
 export class CommonActions{
     constructor(page){
@@ -32,4 +33,8 @@ export class CommonActions{
     async isVisible(locator){
         await expect(this.page.locator(locator)).toBeVisible()
     }
+    async haveText(locator1,locator2){
+        await expect(this.page.locator(locator1)).toContainText(locator2)
+    }
+
 }
