@@ -30,7 +30,7 @@ test("Test 5", {tag: "@smoke@reg"}, async function({page}){
 
 })
 
-test("Test 6", {tag: "@sanity@reg"}, async function({page}){
+test("Test 6", {tag: "@sanity@smoke"}, async function({page}){
     console.log("sanity with reg")
 
 
