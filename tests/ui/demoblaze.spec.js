@@ -3,6 +3,7 @@ import {test,expect,chromium, firefox,webkit} from "@playwright/test"
 import { productPage } from "../../pages/productPage"; 
 
 import { CommonActions } from "../../utils/common";
+import { Cartpage } from "../../pages/Cartpage";
 
 test.describe("Testing Demoblaze Website" , async () => {
 
@@ -23,6 +24,16 @@ test.describe("Testing Demoblaze Website" , async () => {
             await prodpage.printProducts()
             await prodpage.selectProduct()
             await prodpage.handleAlert()
+
+            let cartpage = new Cartpage(page)
+            
+            await cartpage.cart()
+            await cartpage.cartPage()
+            await cartpage.placeOrder()
+            await cartpage.purchase()
+
+
+
 
 
 
