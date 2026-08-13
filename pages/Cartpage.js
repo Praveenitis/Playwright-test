@@ -42,7 +42,7 @@ export class Cartpage extends CommonActions{
         await this.Fillaction(this.formcity,process.env.FORM_CITY)
         await this.Fillaction(this.formcc,process.env.FORM_CC)
         await this.Fillaction(this.formmonth,process.env.FORM_MONTH)
-        
+        await this.Fillaction(this.formyear,process.env.FORM_YEAR)
     }
     
 
