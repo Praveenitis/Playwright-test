@@ -26,7 +26,7 @@ test("actionspractise", async function ({page}) {
 
     //Method 2 
 
-  
+    await page.locator('[id="dateOfBirthInput"]').click()
     await page.locator('//select[@class="react-datepicker__month-select"]').selectOption("6")
     await page.locator('//select[@class="react-datepicker__year-select"]').selectOption("2007")
     await page.locator('//div[@class="react-datepicker__day react-datepicker__day--031"]').click()
