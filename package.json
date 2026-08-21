@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx playwright test --project=chromium --headed",
-    "ui" : "npx playwright test tests/ui --project=chromium --headed"
+    "ui": "npx playwright test tests/ui --project=chromium --headed"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +20,7 @@
     "allure-playwright": "^3.10.2",
     "csv-parse": "^7.0.2",
     "dotenv": "^17.4.2",
+    "mysql2": "^3.23.4",
     "xlsx": "^0.18.5"
   }
 }
