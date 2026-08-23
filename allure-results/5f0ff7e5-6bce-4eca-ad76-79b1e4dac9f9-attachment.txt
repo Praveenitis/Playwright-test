@@ -1,0 +1,9 @@
+ResultSetHeader {
+  fieldCount: 0,
+  affectedRows: 3,
+  insertId: 2,
+  info: 'Records: 3  Duplicates: 0  Warnings: 0',
+  serverStatus: 2,
+  warningStatus: 0,
+  changedRows: 0
+}

@@ -1,0 +1,11 @@
+{
+  accessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJqYW1lc2QiLCJlbWFpbCI6ImphbWVzLmRhdmlzQHguZHVtbXlqc29uLmNvbSIsImZpcnN0TmFtZSI6IkphbWVzIiwibGFzdE5hbWUiOiJEYXZpcyIsImdlbmRlciI6Im1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2phbWVzZC8xMjgiLCJpYXQiOjE3ODY2OTcyNDUsImV4cCI6MTc4NjcwMDg0NX0.SObiD3P6oY8kaiPv5mOFekKHA8wkwfpzM5Qms_vOJ-c',
+  refreshToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwidXNlcm5hbWUiOiJqYW1lc2QiLCJlbWFpbCI6ImphbWVzLmRhdmlzQHguZHVtbXlqc29uLmNvbSIsImZpcnN0TmFtZSI6IkphbWVzIiwibGFzdE5hbWUiOiJEYXZpcyIsImdlbmRlciI6Im1hbGUiLCJpbWFnZSI6Imh0dHBzOi8vZHVtbXlqc29uLmNvbS9pY29uL2phbWVzZC8xMjgiLCJpYXQiOjE3ODY2OTcyNDUsImV4cCI6MTc4OTI4OTI0NX0.9U1uXn_LabQ-q_Vp2CZKk8DsQGZSXJcHnV7jD74oQKY',
+  id: 4,
+  username: 'jamesd',
+  email: 'james.davis@x.dummyjson.com',
+  firstName: 'James',
+  lastName: 'Davis',
+  gender: 'male',
+  image: 'https://dummyjson.com/icon/jamesd/128'
+}
