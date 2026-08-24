@@ -64,6 +64,6 @@ test ("get specific record", async ({}) => {
         WHERE ID = ?
         `,[2]);
 
-    
+    console.log(result)
 })
 })
