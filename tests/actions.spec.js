@@ -85,7 +85,7 @@ test("Handling Register form", async function({page}){
 
         //ASSERT
 
-        
+        await expect(page.locator('//select[@id="country"]//option')).toHaveCount(10)
         await expect((await page.$$('//select[@id="country"]//option')).length).toBe(10)
 
 
