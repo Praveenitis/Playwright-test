@@ -48,7 +48,7 @@ export class Cartpage extends CommonActions{
 
     async purchase(){
         await this.Click(this.purchasebtn)
-        
+        await this.isVisible(this.confirmpurchase)
     }
     
 
