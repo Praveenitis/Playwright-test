@@ -47,7 +47,7 @@ test("Test 6", async function({page}){ //we can use it inside test block , just 
 
 test("Test 7", async function({page}){ //condition based, edachu condition kuduthu skip or slow pandrathu
 
-     
+     console.log("condition")
 
     
 })
