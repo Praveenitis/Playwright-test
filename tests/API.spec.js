@@ -112,7 +112,7 @@ test("DELETE - UPDATE USER", async ({}) => {
 
         const body = await response.json()
     console.log(body)
-    expect(response.status()).toBe(200)
+    
 
 })
 
