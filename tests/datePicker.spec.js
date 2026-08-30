@@ -31,5 +31,5 @@ test("File Upload Handle", async ({page}) => {
 
      //dates
      await page.locator(`//a[@class="ui-state-default" and @data-date="${date}"]`).click()
-     await page.waitForTimeout(4000)
+    
 })
