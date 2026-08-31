@@ -42,3 +42,6 @@ test.beforeAll(async()=>{
     console.log("Before all")
 })
 
+test.afterAll(async()=>{
+    console.log("After All")
+})
