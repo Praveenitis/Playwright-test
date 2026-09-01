@@ -11,7 +11,7 @@ for (let char of str) {
     }
 }
 
-console.log(count);
+
 
 
 
